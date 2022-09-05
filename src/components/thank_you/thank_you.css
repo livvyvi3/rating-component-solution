@@ -1,0 +1,50 @@
+:root{
+    --prmry-clr-orange : hsl(25, 97%, 53%);
+    --prmry-clr-wht : hsl(0, 0%, 100%);
+    --prmry-clr-lt-grey: hsl(217, 12%, 63%);
+    --prmry-clr-mdm-grey: hwb(216 49% 40%);
+    --prmry-clr-drk-blue: hsl(213, 19%, 18%);
+    --prmry-clr-vr-drk-blue: hsl(216, 12%, 8%);
+  }
+
+.thankyou-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .selected-rating {
+    background: var(--prmry-clr-drk-blue);
+    border-radius: 22.5px;
+    width: 65%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .selected-rating p {
+    color: var(--prmry-clr-orange);
+    font-size: 1.2rem;
+  }
+  
+  .appreciation-div h4 {
+    color: var(--prmry-clr-wht);
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  
+  .appreciation-div p {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    color: var(--prmry-clr-mdm-grey);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .appreciation-div p {
+      font-size: 0.8rem;
+    }
+  }

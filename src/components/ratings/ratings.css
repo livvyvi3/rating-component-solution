@@ -1,0 +1,106 @@
+:root{
+    --prmry-clr-orange : hsl(25, 97%, 53%);
+    --prmry-clr-wht : hsl(0, 0%, 100%);
+    --prmry-clr-lt-grey: hsl(217, 12%, 63%);
+    --prmry-clr-mdm-grey: hwb(216 49% 40%);
+    --prmry-clr-drk-blue: hsl(213, 19%, 18%);
+    --prmry-clr-vr-drk-blue: hsl(216, 12%, 8%);
+  }
+.card {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 30px;
+    background: var(--prmry-clr-drk-blue);
+    padding: 2rem;
+  }
+  
+  .star-div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--prmry-clr-drk-blue)
+  }
+  
+  .question-div h4 {
+    font-size: 2rem;
+    color: var(--prmry-clr-wht);
+    margin-bottom: 0;
+  }
+  
+  .question-div p {
+    margin: 10px 0 0;
+    color: var(--prmry-clr-lt-grey);
+  }
+  
+  .ratings-div {
+    color: var(--prmry-clr-wht);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .ratings-div .rating {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--prmry-clr-vr-drk-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .ratings-div .rating:hover {
+    background: var(--prmry-clr-orange);
+  }
+  
+  .submit-btn {
+    margin-top: 2rem;
+  }
+  
+  .submit-btn button {
+    width: 100%;
+    height: 3.5rem;
+    background: var(--prmry-clr-orange);
+    color: var(--prmry-clr-wht);
+    font-size: 1.2rem;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    border-radius: 22.5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .submit-btn button:hover {
+    background: var(--prmry-clr-wht);
+    color: var(--prmry-clr-orange);
+  }
+  
+  .ratings-div .active {
+    background: var(--prmry-clr-lt-grey)
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  
+    .question-div p {
+      font-size: 0.9rem;
+    }
+  
+    .question-div,
+    .ratings-div,
+    .submit-btn {
+      width: 100%;
+    }
+  
+    .ratings-div div {
+      width: 40px;
+      height: 40px;
+    }
+  }
